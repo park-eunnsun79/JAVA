@@ -1,0 +1,29 @@
+package day_10real;
+
+public class CharString6_7 {
+
+    public static void main(String[] args) {
+        String str = "programming is not fun! left";
+        System.out.println("str=" + str);
+
+        char[] charArr = str.toCharArray();
+
+     
+        int countR = 0;
+        int countr = 0;
+
+
+        for (int i = 0; i < str.length(); i++) {
+            if (charArr[i] == 'r') {
+                countr++;  
+            }
+            if (charArr[i] == 'R') {
+                countR++;  
+            }
+        }
+
+    
+        System.out.println("'r'의 개수: " + countr);
+        System.out.println("'R'의 개수: " + countR);
+    }
+}
