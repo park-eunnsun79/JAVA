@@ -1,0 +1,42 @@
+package day_10real;
+
+public class Sungjuck {
+
+    public static void main(String[] args) {
+        String[] names = {"나", "너", "쟤"};
+        int[] kor = {60, 70, 50};
+        int[] math = {10, 70, 90};
+        int i = 0;
+
+       
+        System.out.print("names: ");
+        for (i = 0; i < names.length; i++)
+            System.out.print(names[i] + " ");
+        
+        System.out.println(); 
+
+       
+        System.out.print("kor :");
+        for (i = 0; i < names.length; i++)
+            System.out.printf("%3d  ", kor[i]);
+        
+        System.out.println(); 
+
+     
+        System.out.print("math :");
+        for (i = 0; i < names.length; i++)
+            System.out.printf("%3d  ", math[i]);
+
+
+        
+        System.out.println("");  
+        System.out.print("total : ");
+        for (i = 0; i < 3; i++) {
+            
+            int total = kor[i] + math[i];  
+            System.out.printf("%3d  ", total);  
+        }
+
+        }
+        
+    }
