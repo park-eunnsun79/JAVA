@@ -1,0 +1,26 @@
+package day11_array;
+
+public class MathinParam {
+
+    public static void main(String[] args) {
+        String[] days = {"월", "화", "수", "목", "금", "토", "일"};
+        int[] runningTimes = {42, 66, 57, 54, 88, 64, 71};
+
+        int evenSum = 0;
+        int oddSum = 0;
+
+        for (int time : runningTimes) {
+            if (time % 2 == 0) {
+                evenSum += time;
+            } else {
+                oddSum += time;
+            }
+        }
+
+        int totalSum = evenSum + oddSum;
+
+        System.out.println("짝수 합계: " + evenSum + "분");
+        System.out.println("홀수 합계: " + oddSum + "분");
+        System.out.println("전체 합계: " + totalSum + "분");
+    }
+}
